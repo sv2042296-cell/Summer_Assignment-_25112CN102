@@ -12,15 +12,13 @@ int main() {
         for (int i = 1; i <= digit; i++) {
             fact *= i;
         }
-
         sum += fact;
         temp /= 10;
     }
-
     if (sum == n)
-        cout << n<<"is a Strong Number";
+        cout << n<<"is  Strong Number";
     else
-        cout<<n<<"is not a Strong Number";
+        cout<<n<<"is not  Strong Number";
 
     return 0;
 }
