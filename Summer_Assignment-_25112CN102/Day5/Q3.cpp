@@ -4,9 +4,10 @@ int main() {
     int n;
     cout << "Enter a number: ";
     cin >> n;
-    cout << "Factors " << n << " are: ";
+    cout << "Factors of " << n << " are: ";
     for (int i = 1; i <= n; i++) {
-        if (n % i == 0) {
+        if (n
+             % i == 0) {
             cout << i << " ";
         }
     }
