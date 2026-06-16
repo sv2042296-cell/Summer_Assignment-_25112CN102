@@ -1,7 +1,8 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int main() {
+int main()
+{
 
     int n;
     cout << "Enter size: ";
@@ -9,25 +10,30 @@ int main() {
 
     int arr[n];
 
-    for(int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++)
+    {
         cin >> arr[i];
     }
 
     int maxFreq = 0;
     int element;
 
-    for(int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++)
+    {
 
         int count = 0;
 
-        for(int j = 0; j < n; j++) {
+        for (int j = 0; j < n; j++)
+        {
 
-            if(arr[i] == arr[j]) {
+            if (arr[i] == arr[j])
+            {
                 count++;
             }
         }
 
-        if(count > maxFreq) {
+        if (count > maxFreq)
+        {
             maxFreq = count;
             element = arr[i];
         }
