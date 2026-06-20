@@ -11,7 +11,7 @@ int main()
   cout << "Enter number of columns: ";
   cin >> m;
 
-  int A[n][m], B[n][m], Sum[n][m];
+  int A[n][m], B[n][m], sub[n][m];
 
   cout << "Enter elements of first matrix:\n";
   for (int i = 0; i < n; i++)
@@ -35,7 +35,7 @@ int main()
   {
     for (int j = 0; j < m; j++)
     {
-      Sum[i][j] = A[i][j] - B[i][j];
+      sub[i][j] = A[i][j] - B[i][j];
     }
   }
 
@@ -44,7 +44,7 @@ int main()
   {
     for (int j = 0; j < m; j++)
     {
-      cout << Sum[i][j] << " ";
+      cout << sub[i][j] << " ";
     }
     cout << endl;
   }
