@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
 
-int main() {
+int main()
+{
     int r, c;
 
     cout << "Enter rows and columns: ";
@@ -10,16 +11,20 @@ int main() {
     int a[r][c];
 
     cout << "Enter matrix elements:\n";
-    for(int i = 0; i < r; i++) {
-        for(int j = 0; j < c; j++) {
+    for (int i = 0; i < r; i++)
+    {
+        for (int j = 0; j < c; j++)
+        {
             cin >> a[i][j];
         }
     }
 
-    for(int j = 0; j < c; j++) {
+    for (int j = 0; j < c; j++)
+    {
         int sum = 0;
 
-        for(int i = 0; i < r; i++) {
+        for (int i = 0; i < r; i++)
+        {
             sum += a[i][j];
         }
 
