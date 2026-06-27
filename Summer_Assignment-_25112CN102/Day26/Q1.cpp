@@ -17,6 +17,7 @@ int main()
             cout << "Too Low!\n";
 
     } while (guess != secret);
+    
     cout << "Correct! You guessed the number.";
 
     return 0;
